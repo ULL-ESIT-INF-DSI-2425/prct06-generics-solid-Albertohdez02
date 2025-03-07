@@ -10,9 +10,16 @@
     "test": "vitest run",
     "test1": "vitest run tests/ejercicio-1.spec.ts",
     "test2": "vitest run tests/ejercicio-2.spec.ts",
-    "test3": "vitest run tests/modificacion.spec.ts",
+    "test3": "vitest run tests/ejercicio-3.spec.ts",
+    "test4": "vitest run tests/ejercicio-4.spec.ts",
+    "test5": "vitest run tests/ejercicio-5.spec.ts",
+    "test6": "vitest run tests/ejercicio-6.spec.ts",
     "coverage1" : "vitest run tests/ejercicio-1.spec.ts --coverage --coverage.include src/ejercicio-1/*",
-    "coverage2" : "vitest run tests/ejercicio-2.spec.ts --coverage --coverage.include src/ejercicio-2*",
+    "coverage2" : "vitest run tests/ejercicio-2.spec.ts --coverage --coverage.include src/ejercicio-2/*",
+    "coverage3" : "vitest run tests/ejercicio-3.spec.ts --coverage --coverage.include src/ejercicio-3/*",
+    "coverage4" : "vitest run tests/ejercicio-4.spec.ts --coverage --coverage.include src/ejercicio-4/*",
+    "coverage5" : "vitest run tests/ejercicio-5.spec.ts --coverage --coverage.include src/ejercicio-5/*",
+    "coverage6" : "vitest run tests/ejercicio-6.spec.ts --coverage --coverage.include src/ejercicio-6/*",
     "coverage" : "vitest run tests/* --coverage --coverage.include src/*"
   },
   "repository": {
