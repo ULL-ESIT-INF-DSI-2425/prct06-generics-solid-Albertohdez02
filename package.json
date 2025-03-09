@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "ej1": "tsc-watch --onSuccess \"node dist/ejercicio-1/index.js\"",
-    "ej2": "tsc-watch --onSuccess \"node dist/ejercicio-2/index.js\"",
+    "ej4": "tsc-watch --onSuccess \"node dist/ejercicio-4/printablescanner.js\"",
     "doc": "typedoc",
     "test": "vitest run",
     "test1": "vitest run tests/ejercicio-1.spec.ts",
