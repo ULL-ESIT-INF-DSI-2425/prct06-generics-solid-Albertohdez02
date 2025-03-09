@@ -1,29 +1,25 @@
-import { albumInfo } from "./types";
 import { Song } from "./song";
 
 /**
- * Represents an Album
- *
- * This class initializes an Album with its information.
- *
- * Class Album
+ * Represents a music album.
  */
-export class Album implements albumInfo {
+export class Album {
+  title: string;
+  artist: string;
+  year: number;
+  tracks: Song[];
+
   /**
-   * Constructor of an object of the class Album
-   * @param name - a string with the name of an album
-   * @param year - a number with the release year of the album
-   * @param songs - a list of songs that make the album
+   * Creates an album instance.
+   * @param title - The title of the album.
+   * @param artist - The artist of the album.
+   * @param year - The release year of the album.
+   * @param tracks - The list of tracks in the album.
    */
-  constructor(
-    public readonly name: string,
-    public readonly year: number,
-    public readonly songs: Song[],
-  ) {
-    if (name == "") throw new Error("An album must have a name.");
-    if (!Number.isInteger(year) || year < 0)
-      throw new Error("The realese year of a song must be a positive integer.");
-    if (songs.length == 0)
-      throw new Error("An album must have at least 1 song.");
+  constructor(title: string, artist: string, year: number, tracks: Song[]) {
+    this.title = title;
+    this.artist = artist;
+    this.year = year;
+    this.tracks = tracks;
   }
 }
