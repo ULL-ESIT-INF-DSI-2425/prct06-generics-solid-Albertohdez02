@@ -65,11 +65,46 @@ describe("", () => {
     expect(reversedlist.array).toEqual([6, 5, 4, 3, 2, 1]);
   });
 
-  test('should map elements correctly', () => {
+  test('Should map elements correctly', () => {
     const myArray = new MyArray(1, 2, 3, 4);
 
     const result = myArray.map((element) => element * 2);
-    
+
     expect(result).toEqual(new MyArray(2, 4, 6, 8));
+  });
+
+  test('Should reduce an array correctly', () => {
+    const myArray = new MyArray(1, 2, 3, 4);
+
+    const sum = myArray.reduce((acc, value) => acc + value, 0);
+    expect(sum).toBe(10);
+
+    const product = myArray.reduce((acc, value) => acc * value, 1);
+    expect(product).toBe(24);
+  });
+
+  test('Should execute forEach correctly on each element', () => {
+    const myArray = new MyArray(1, 2, 3, 4);
+
+    const results: string[] = [];
+    let total: number = 0;
+
+
+    myArray.forEach((element, index) => {
+      results.push(`Element at index ${index}: ${element}`);
+    });
+
+    expect(results).toEqual([
+      'Element at index 0: 1',
+      'Element at index 1: 2',
+      'Element at index 2: 3',
+      'Element at index 3: 4',
+    ]);
+
+    numberArray1.forEach((element) => {
+      total += element; 
+    })
+
+    expect(total).toBe(55);
   });
 });

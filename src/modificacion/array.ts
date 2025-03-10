@@ -1,7 +1,6 @@
-
 /**
- * Class that creates an operates an array on a T generic type 
- * 
+ * Class that creates an operates an array on a T generic type
+ *
  * Class MyArray
  */
 export class MyArray<T> {
@@ -9,9 +8,9 @@ export class MyArray<T> {
 
   /**
    * Construct a MyArray object
-   * @param elements - a list of T type elements 
+   * @param elements - a list of T type elements
    */
-  constructor(...elements: T[] ) {
+  constructor(...elements: T[]) {
     this._array = elements;
   }
 
@@ -43,7 +42,7 @@ export class MyArray<T> {
 
     const lastElement = this._array[this._array.length - 1];
     const newArray: T[] = [];
-    
+
     for (let i = 0; i < this._array.length - 1; i++) {
       newArray[i] = this._array[i];
     }
@@ -57,7 +56,7 @@ export class MyArray<T> {
    * @returns - the length of the array (number)
    */
   length() {
-    return this._array.length
+    return this._array.length;
   }
 
   /**
@@ -82,7 +81,7 @@ export class MyArray<T> {
     }
     return result;
   }
-  
+
   /**
    * Filters elements based on a predicate function.
    * @param predicate - The function to test each element.
@@ -97,7 +96,7 @@ export class MyArray<T> {
     }
     return result;
   }
-  
+
   /**
    * Adds an element to the list.
    * @param item - The element to add.
@@ -108,16 +107,17 @@ export class MyArray<T> {
 
   /**
    * Method that reverses an array
-   * @returns - a reversed list 
+   * @returns - a reversed list
    */
   reverse(): MyArray<T> {
     let result = new MyArray<T>();
-    for (let i = this.length() - 1; i >= 0; --i) { // Corrección en el índice inicial
+    for (let i = this.length() - 1; i >= 0; --i) {
+      // Corrección en el índice inicial
       result.push(this._array[i]); // Añadir correctamente el elemento a result
     }
     return result;
   }
-  
+
   /**
    * Method that maps an array with a function
    * @param callback - function to apply to the array
@@ -130,5 +130,29 @@ export class MyArray<T> {
     }
     return new MyArray<U>(...mappedArray);
   }
-  
+
+  /**
+   * Method that reduces an array according to a function
+   * @returns an element with the result of the operation on the array
+   */
+  reduce<U>(
+    callback: (accumulator: U, currentValue: T) => U,
+    initialValue: U,
+  ): U {
+    let accumulator = initialValue;
+    for (let i = 0; i < this._array.length; i++) {
+      accumulator = callback(accumulator, this._array[i]);
+    }
+    return accumulator;
+  }
+
+  /**
+   * Method that executes a function for each element of the array
+   * @param callback - function to apply to each element
+   */
+  forEach(callback: (element: T, index: number, array: T[]) => void): void {
+    for (let i = 0; i < this._array.length; i++) {
+      callback(this._array[i], i, this._array);
+    }
+  }
 }
