@@ -22,7 +22,7 @@
     "coverage5": "vitest run tests/ejercicio-5.spec.ts --coverage --coverage.include src/ejercicio-5/*",
     "coverage6": "vitest run tests/ejercicio-6.spec.ts --coverage --coverage.include src/ejercicio-6/*",
     "coverage7": "vitest run tests/modificacion.spec.ts --coverage --coverage.include src/modificacion/*",
-    "coverage": "vitest run tests/* --coverage --coverage.include src/*"
+    "coverage": "vitest run tests/* --coverage --coverage.include 'src/**/*'"
   },
   "repository": {
     "type": "git",
