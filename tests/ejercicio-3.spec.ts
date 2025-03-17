@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { FileHandler } from "../src/ejercicio-3/filehandler";
-import { FileManager } from "../src/ejercicio-3/filemanager";
+import { FileHandler } from "../src/ejercicio-3/filehandler.js";
+import { FileManager } from "../src/ejercicio-3/filemanager.js";
 import * as fs from "fs";
 
 vi.mock("fs"); 

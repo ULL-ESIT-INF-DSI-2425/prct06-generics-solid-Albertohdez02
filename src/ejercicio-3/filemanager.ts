@@ -1,4 +1,4 @@
-import { FileOptions } from "./fileoptions";
+import { FileOptions } from "./fileoptions.js";
 
 /**
  * Class that implements a FileManager without depending directly from fs

@@ -1,4 +1,4 @@
-import { NotificationService } from "./notificationservice";
+import { NotificationService } from "./notificationservice.js";
 
 /**
  * Class that represents the short message service (SMS)

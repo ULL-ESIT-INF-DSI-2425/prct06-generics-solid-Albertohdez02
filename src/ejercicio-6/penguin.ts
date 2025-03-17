@@ -1,4 +1,4 @@
-import { Bird } from "./bird";
+import { Bird } from "./bird.js";
 
 /**
  * Birds that cannot fly should not implement Flyable.

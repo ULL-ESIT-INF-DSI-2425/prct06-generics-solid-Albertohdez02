@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { MusicLibrary } from '../src/ejercicio-2/musiclibrary';
-import { Song } from '../src/ejercicio-2/song';
-import { Album } from '../src/ejercicio-2/album';
-import { Single } from '../src/ejercicio-2/single';
-import { Discography } from '../src/ejercicio-2/discography';
+import { MusicLibrary } from '../src/ejercicio-2/musiclibrary.js';
+import { Song } from '../src/ejercicio-2/song.js';
+import { Album } from '../src/ejercicio-2/album.js';
+import { Single } from '../src/ejercicio-2/single.js';
+import { Discography } from '../src/ejercicio-2/discography.js';
 
 
 describe('Song', () => {

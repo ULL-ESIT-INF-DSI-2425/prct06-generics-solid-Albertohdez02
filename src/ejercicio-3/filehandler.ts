@@ -1,4 +1,4 @@
-import { FileOptions } from "./fileoptions";
+import { FileOptions } from "./fileoptions.js";
 
 import * as fs from "fs";
 

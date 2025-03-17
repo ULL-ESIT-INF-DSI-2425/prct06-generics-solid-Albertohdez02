@@ -1,8 +1,8 @@
 import { describe, expect, test } from "vitest";
-import { Flyable } from "../src/ejercicio-6/flyable";
-import { Bird } from "../src/ejercicio-6/bird";
-import { Sparrow } from "../src/ejercicio-6/sparrow";
-import { Penguin } from "../src/ejercicio-6/penguin";
+import { Flyable } from "../src/ejercicio-6/flyable.js";
+import { Bird } from "../src/ejercicio-6/bird.js";
+import { Sparrow } from "../src/ejercicio-6/sparrow.js";
+import { Penguin } from "../src/ejercicio-6/penguin.js";
 
 
  

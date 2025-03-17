@@ -1,4 +1,4 @@
-import { Scannable } from "./scannable";
+import { Scannable } from "./scannable.js";
 
 /**
  * Class that represents a Scanner that can only scan

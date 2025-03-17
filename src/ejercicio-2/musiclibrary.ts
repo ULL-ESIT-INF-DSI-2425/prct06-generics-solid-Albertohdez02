@@ -1,6 +1,6 @@
-import { Discography } from "./discography";
-import { Album } from "./album";
-import { Single } from "./single";
+import { Discography } from "./discography.js";
+import { Album } from "./album.js";
+import { Single } from "./single.js";
 
 /**
  * Represents a complete music library.

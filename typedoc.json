@@ -6,7 +6,8 @@
     "src/ejercicio-4/*.ts",
     "src/ejercicio-5/*.ts",
     "src/ejercicio-6/*.ts",
-    "src/modificacion/*.ts",
+    "src/modificacion1/*.ts",
+    "src/modificacion2/*.ts",
   ],
   "out": "./docs"
 }

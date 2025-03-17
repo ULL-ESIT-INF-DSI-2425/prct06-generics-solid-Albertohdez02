@@ -1,8 +1,8 @@
 import { describe, expect, test, beforeEach } from "vitest";
-import { MovieCollection } from "../src/ejercicio-1/movie";
-import { ShowCollection } from "../src/ejercicio-1/show";
-import { DocumentaryCollection } from "../src/ejercicio-1/documentary";
-import { MediaItem } from "../src/ejercicio-1/mediaitem";
+import { MovieCollection } from "../src/ejercicio-1/movie.js";
+import { ShowCollection } from "../src/ejercicio-1/show.js";
+import { DocumentaryCollection } from "../src/ejercicio-1/documentary.js";
+import { MediaItem } from "../src/ejercicio-1/mediaitem.js";
 
 describe("DSIflix Streaming Collections", () => {
   let movieCollection: MovieCollection;

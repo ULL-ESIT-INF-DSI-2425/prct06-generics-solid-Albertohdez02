@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
-import { Printer } from '../src/ejercicio-4/printer';
-import { Scanner } from '../src/ejercicio-4/scanner';
-import { PrinterScanner } from '../src/ejercicio-4/printerscanner';
+import { Printer } from '../src/ejercicio-4/printer.js';
+import { Scanner } from '../src/ejercicio-4/scanner.js';
+import { PrinterScanner } from '../src/ejercicio-4/printerscanner.js';
 
 describe('Printer, Scanner, and PrinterScanner tests', () => {
   test('Printer should print but not scan', () => {

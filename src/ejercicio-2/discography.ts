@@ -1,5 +1,5 @@
-import { Single } from "./single";
-import { Album } from "./album";
+import { Single } from "./single.js";
+import { Album } from "./album.js";
 
 /**
  * Represents a discography containing albums and singles.

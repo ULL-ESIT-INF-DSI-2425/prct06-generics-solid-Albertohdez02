@@ -1,5 +1,5 @@
-import { Printable } from "./printable";
-import { Scannable } from "./scannable";
+import { Printable } from "./printable.js";
+import { Scannable } from "./scannable.js";
 
 /**
  * Class that represents a Printer-Scanner that can print and scan

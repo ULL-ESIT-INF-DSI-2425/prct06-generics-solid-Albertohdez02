@@ -1,5 +1,5 @@
 import { describe, expect, beforeEach, test} from "vitest";
-import { MyArray } from "../src/modificacion/array"
+import { MyArray } from "../src/modificacion1/array.js"
 
 
 describe("", () => {

@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
-import { Notifier } from "../src/ejercicio-5/notifier";
-import { EmailService } from "../src/ejercicio-5/emailservice";
-import { ShortMessageService } from "../src/ejercicio-5/sms";
+import { Notifier } from "../src/ejercicio-5/notifier.js";
+import { EmailService } from "../src/ejercicio-5/emailservice.js";
+import { ShortMessageService } from "../src/ejercicio-5/sms.js";
 
 describe("Notifier", () => {
   test("should send notification via EmailService", () => {

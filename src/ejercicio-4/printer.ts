@@ -1,4 +1,4 @@
-import { Printable } from "./printable";
+import { Printable } from "./printable.js";
 
 /**
  * Class that represents a Printer that can only print

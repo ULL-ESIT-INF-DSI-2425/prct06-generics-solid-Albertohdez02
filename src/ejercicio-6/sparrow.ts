@@ -1,5 +1,5 @@
-import { Flyable } from "./flyable";
-import { Bird } from "./bird";
+import { Flyable } from "./flyable.js";
+import { Bird } from "./bird.js";
 
 /**
  * Birds that can fly should implement the Flyable interface.
